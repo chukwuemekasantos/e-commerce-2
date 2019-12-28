@@ -19,7 +19,7 @@ class CreateReviewsTable extends Migration
             $table->foriegn('product_id')->reference('id')->on('products')->onDelete('cascade');
             $table->string('customer');
             $table->text('review');
-            $table->integer('start');
+            $table->integer('stars');
             $table->timestamps();
         });
     }
