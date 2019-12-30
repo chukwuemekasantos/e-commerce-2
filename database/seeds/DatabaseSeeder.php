@@ -1,5 +1,6 @@
 <?php
 
+use App\User;
 use App\Model\Review;
 use App\Model\Product;
 use Illuminate\Database\Seeder;
@@ -14,8 +15,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-
-        factory(App\Model\Product::class,50)->create();
-        factory(App\Model\Review::class,300)->create();
+        factory(App\User::class,10)->create();
+        // factory(App\Model\Product::class,50)->create();
+        // factory(App\Model\Review::class,300)->create();
     }
 }
